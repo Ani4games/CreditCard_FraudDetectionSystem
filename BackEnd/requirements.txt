@@ -1,0 +1,27 @@
+# Core
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Advanced Models
+xgboost
+lightgbm
+
+# Deep Learning (for autoencoder later)
+tensorflow
+
+# Deployment
+streamlit
+
+# Jupyter for notebooks
+jupyter
+
+# pip install -r requirements.txt
+# pip freeze > requirements.txt
+
