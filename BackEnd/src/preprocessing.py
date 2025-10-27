@@ -16,3 +16,5 @@ def load_and_preprocess(path="data/creditcard.csv"):
     )
 
     return X_train, X_test, y_train, y_test, scaler
+# if __name__ == "__main__":
+#     load_and_preprocess()
