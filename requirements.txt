@@ -1,0 +1,1 @@
+streamlit, numpy, seaborn, matplotlib, pandas, os, joblib, requests, plotly
