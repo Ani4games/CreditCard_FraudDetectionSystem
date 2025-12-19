@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-def load_and_preprocess(path="data/creditcard.csv"):
+def load_and_preprocess(path="../data/creditcard.csv"):
     df = pd.read_csv(path)
 
     X = df.drop("Class", axis=1)
@@ -16,5 +16,5 @@ def load_and_preprocess(path="data/creditcard.csv"):
     )
 
     return X_train, X_test, y_train, y_test, scaler
-# if __name__ == "__main__":
-#     load_and_preprocess()
+if __name__ == "__main__":
+    load_and_preprocess()

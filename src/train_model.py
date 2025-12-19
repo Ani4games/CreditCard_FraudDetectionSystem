@@ -13,8 +13,8 @@ def train_and_save_model():
     print(classification_report(y_test, y_pred))
 
     # Save model + scaler
-    joblib.dump(model, "src/fraud_model.pkl")
-    joblib.dump(scaler, "src/scaler.pkl")
+    joblib.dump(model, "fraud_model.pkl")
+    joblib.dump(scaler, "scaler.pkl")
     print("✅ Model and Scaler saved!")
 
 if __name__ == "__main__":

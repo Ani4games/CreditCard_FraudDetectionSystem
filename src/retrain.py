@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
-def retrain_model(new_data_path="data/retrain_data.csv"):
+def retrain_model(new_data_path="../data/retrain_data.csv"):
     df = pd.read_csv(new_data_path)
     X = df.drop("Class", axis=1)
     y = df["Class"]
@@ -15,8 +15,8 @@ def retrain_model(new_data_path="data/retrain_data.csv"):
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X_scaled, y)
 
-    joblib.dump(model, "src/fraud_model.pkl")
-    joblib.dump(scaler, "src/scaler.pkl")
+    joblib.dump(model, "fraud_model.pkl")
+    joblib.dump(scaler, "scaler.pkl")
     print("✅ Model retrained and saved successfully!")
 
 if __name__ == "__main__":

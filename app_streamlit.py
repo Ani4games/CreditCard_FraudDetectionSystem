@@ -5,6 +5,7 @@ import joblib
 import requests
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 #Exception handling for missing files
 def load_resource(file_path):
